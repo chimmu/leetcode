@@ -18,12 +18,10 @@ class Solution {
 		int titleToNumber(string s) {
 			const char *p = s.c_str();
 			int ret = 0;
-			if (s.length() == 1) {
-				
-				ret =   *p - 'A' + 1;
-			} else {
-				ret = 26 + *(p+1) - 'A' + 1
-			}	
+			while (*p) {
+				ret *= 26;
+				ret += *p - 'A' + 1;
+			}
 			return ret;
 		}
 }
