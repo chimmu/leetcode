@@ -14,7 +14,7 @@ class List {
 		int add(int val);
 		int del(int val);
 		const void print() const;
-	private:
+
 		ListNode *root;
 };
 #endif
