@@ -1,4 +1,0 @@
-编译方法:
-源码目录下创建build: mkdir build
-然后cmake ..
-make
