@@ -1,4 +1,5 @@
 #include <iostream>
+#include "btree.h"
 using namespace std;
 
 /**
@@ -11,17 +12,17 @@ using namespace std;
  *
  *  * Definition for a binary tree node.
  */
- struct TreeNode {
+/* struct TreeNode {*/
  
-int val;
+//int val;
 
-TreeNode *left;
+//TreeNode *left;
 
-TreeNode *right;
+//TreeNode *right;
 
-TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+//TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 
-};
+/*};*/
 
 class Solution {
 	
@@ -39,3 +40,7 @@ class Solution {
 
 
 };
+int main()
+{
+	
+}
