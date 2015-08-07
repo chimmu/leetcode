@@ -17,7 +17,8 @@ class Solution {
 		int myAtoi(string str){
 			if (str.empty()) return 0;
 			const char *p = str.c_str();
-			int ret = 0, flag = 1, tmp = 0;
+			int ret = 0, flag = 1;
+			unsigned long long tmp = 0;
 			bool first = false;
 			while(*p) {
 				if (!first && *p == ' ') {
@@ -38,14 +39,14 @@ class Solution {
 				if (*p < '0' || *p > '9')
 					break;
 				first = true;
-				tmp = ret;
-				ret *= 10;
-				ret += (*p - '0');
-				if (tmp > ret){
+				tmp *= 10;
+				tmp += (*p - '0');
+				ret = tmp;
+				if (tmp != ret){
 					if (flag > 0) return INT_MAX;
 					else return INT_MIN;
 				}
-				p++;
+					p++;
 			}
 			return ret * flag;
 		}
@@ -71,5 +72,6 @@ int main()
 	cout << s.myAtoi("1234569999999999999999999") << endl;
 	cout << s.myAtoi("-1234569999999999999999999") << endl;
 	cout << s.myAtoi("-2147483649") << endl;
+	cout << s.myAtoi(" 10522545459") << endl;
 
 }
