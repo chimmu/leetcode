@@ -14,6 +14,7 @@ class List {
 		int add(int val);
 		int del(int val);
 		const void print() const;
+		ListNode *getTail();
 
 		ListNode *root;
 };

@@ -31,6 +31,15 @@ int List::del(int val)
 	return -1;
 }
 
+ListNode *List::getTail()
+{
+	ListNode *p = root, *prev = root;
+	while (p) {
+		prev = p;
+		p = p->next;
+	}
+	return prev;
+}
 const void List::print() const
 {
 	ListNode *p = root;
