@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION "2.8")
 project(leetcode)
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -Wall -g -ggdb")
+set(CMAKE_BUILD_TYPE "Debug")
 include_directories(./common)
 aux_source_directory(./common PUBLIC)
 add_library(common SHARED ${PUBLIC})
