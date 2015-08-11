@@ -1,67 +1,49 @@
 #include <iostream>
-#include "list.h"
+#include <vector>
 using namespace std;
 
 /**
- * Given a sorted linked list, delete all duplicates such that each element appear only once.
+ *  Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
  *
- * For example,
- * Given 1->1->2, return 1->2.
- * Given 1->1->2->3->3, return 1->2->3.
+ *  Do not allocate extra space for another array, you must do this in place with constant memory.
+ *
+ *  For example,
+ *  Given input array nums = [1,1,2],
+ *
+ *  Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length. 
  */
 
-/**
- *  * Definition for singly-linked list.
- *   * struct ListNode {
- *    *     int val;
- *     *     ListNode *next;
- *      *     ListNode(int x) : val(x), next(NULL) {}
- *       * };
-*/
 class Solution {
+	
 	public:
-		ListNode* deleteDuplicates(ListNode* head) {
-			ListNode **p = &head->next;
-			int prev = head->val;
-			while(*p) {
-				if ((*p)->val == prev) {//delete *p
-					if ((*p)->next) {
-						(*p)->val = (*p)->next->val;
-						(*p)->next = (*p)->next->next;
-						continue;
-					} 
-					//meet the end
-					*p = NULL;
-					break;
+
+		int removeDuplicates(vector<int>& nums) {
+			int len = nums.size();
+			if (len == 0) return 0;
+			vector<int>::iterator iter = nums.begin();
+			int nprev = *iter++;
+			while(iter != nums.end()) {
+				if (nprev == *iter) {
+					len--;
+					nums.erase(iter);
+					continue;
 				}
-				prev = (*p)->val;
-				p = &(*p)->next;
+				nprev = *iter++;
 			}
-			return head;
+			return len;
 		}
 
 };
 
 int main()
 {
+	vector<int> vec;
+	for (int i = 0; i < 10; i++)
+		vec.push_back(1);
 	Solution s;
-	List l;
-
-	l.add(3);
-	l.add(3);
-	l.add(3);
-	l.add(2);
-	l.add(2);
-	l.add(1);
-	l.add(1);
-	cout << "before: ";
-	l.print();
-	ListNode *head = s.deleteDuplicates(l.root);
-	cout << "after";
-	while (head) {
-		cout << head->val <<  "->";
-		head = head->next;
-	}
-	cout << endl;
+	//cout << s.removeDuplicates(vec) << endl;
+	for (int i = 0; i < 100; i++)
+		vec.push_back(2);
+	cout << s.removeDuplicates(vec) << endl;
 	return 0;
 }
