@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/kth_max_elem_array.dir/kth_max_elem_array.cc.o  -o kth_max_elem_array -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

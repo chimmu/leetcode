@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/add_binary.dir/add_binary.cc.o  -o add_binary -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

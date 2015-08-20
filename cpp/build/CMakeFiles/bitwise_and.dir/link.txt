@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/bitwise_and.dir/bitwise_and.cc.o  -o bitwise_and -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

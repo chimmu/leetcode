@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/compare_version.dir/compare_version.cc.o  -o compare_version -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

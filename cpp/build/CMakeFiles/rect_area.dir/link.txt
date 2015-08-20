@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/rect_area.dir/rect_area.cc.o  -o rect_area -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

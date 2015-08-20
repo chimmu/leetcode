@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/excel_sheet_column_title.dir/excel_sheet_column_title.cc.o  -o excel_sheet_column_title -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 
