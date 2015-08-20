@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/remove_node.dir/remove_node.cc.o  -o remove_node -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

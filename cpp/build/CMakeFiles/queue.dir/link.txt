@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/queue.dir/queue.cc.o  -o queue -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

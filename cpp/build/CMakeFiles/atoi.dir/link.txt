@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/atoi.dir/atoi.cc.o  -o atoi -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

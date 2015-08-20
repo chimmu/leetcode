@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/reverse_words.dir/reverse_words.cc.o  -o reverse_words -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

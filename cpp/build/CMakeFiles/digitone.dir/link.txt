@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/digitone.dir/digitone.cc.o  -o digitone -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

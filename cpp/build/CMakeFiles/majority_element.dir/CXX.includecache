@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chimmu/github/leetcode/leetcode/cpp/majority_element.cc
+iostream
+-
+vector
+-
+map
+-
+stdlib.h
+-
+

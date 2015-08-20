@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././common/list.h
+stdio.h
+-
+
+/home/chimmu/github/leetcode/leetcode/cpp/remove_node.cc
+iostream
+-
+list.h
+/home/chimmu/github/leetcode/leetcode/cpp/list.h
+

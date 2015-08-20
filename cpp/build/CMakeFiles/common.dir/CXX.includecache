@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chimmu/github/leetcode/leetcode/cpp/common/btree.cc
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+math.h
+-
+btree.h
+/home/chimmu/github/leetcode/leetcode/cpp/common/btree.h
+
+/home/chimmu/github/leetcode/leetcode/cpp/common/btree.h
+
+/home/chimmu/github/leetcode/leetcode/cpp/common/list.cc
+list.h
+/home/chimmu/github/leetcode/leetcode/cpp/common/list.h
+
+/home/chimmu/github/leetcode/leetcode/cpp/common/list.h
+stdio.h
+-
+

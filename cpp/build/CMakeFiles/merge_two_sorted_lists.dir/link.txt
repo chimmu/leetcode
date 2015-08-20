@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -ggdb   CMakeFiles/merge_two_sorted_lists.dir/merge_two_sorted_lists.cc.o  -o merge_two_sorted_lists -rdynamic libcommon.so -Wl,-rpath,/home/chimmu/github/leetcode/leetcode/cpp/build 

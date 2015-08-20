@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././common/btree.h
+
+/home/chimmu/github/leetcode/leetcode/cpp/balanced_binary_tree.cc
+iostream
+-
+btree.h
+/home/chimmu/github/leetcode/leetcode/cpp/btree.h
+
