@@ -25,7 +25,7 @@ class Solution {
 			while(iter != nums.end()) {
 				if (nprev == *iter) {
 					len--;
-					nums.erase(iter);
+					iter = nums.erase(iter);
 					continue;
 				}
 				nprev = *iter++;

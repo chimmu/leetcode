@@ -17,7 +17,7 @@ class Solution {
 			vector<int>::iterator iter = nums.begin();
 			while(iter != nums.end()) {
 				if (*iter == val) {
-					nums.erase(iter);
+					iter = nums.erase(iter);
 					len--;
 					continue;
 				}
